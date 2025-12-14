@@ -1,0 +1,10 @@
+<label>
+  <input type="checkbox" [(ngModel)]="node.selected" (change)="onToggle()">
+  {{ node.name }}
+</label>
+
+<ul *ngIf="node.children?.length">
+  <li *ngFor="let child of node.children">
+    <app-tree-node [node]="child" (toggle)="onChildToggle($event)"></app-tree-node>
+  </li>
+</ul>

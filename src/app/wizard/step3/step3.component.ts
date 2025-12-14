@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WizardService } from '../wizard.service';
+import { WizardService } from '../../services/wizard.service';
 import { CommonModule } from '@angular/common';
 
 

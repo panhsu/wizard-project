@@ -1,3 +1,7 @@
-<h3>Step 1: User Info</h3>
-<input [(ngModel)]="name" placeholder="Enter your name">
+<ul>
+  <li>
+    <app-tree-node [node]="tree" (toggle)="onToggle($event)"></app-tree-node>
+  </li>
+</ul>
+
 <button (click)="next()">Next</button>

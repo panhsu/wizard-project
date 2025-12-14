@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { WizardService } from '../wizard.service';
+import { WizardService } from '../../services/wizard.service';
 import { FormsModule } from '@angular/forms';
 
 @Component({
